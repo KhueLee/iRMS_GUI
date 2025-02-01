@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(181, 180, 180);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="wid_topbar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+ background-color: rgb(238, 0, 51);
+}
+
+QPushButton  {
+	color: rgb(255, 255, 255);
+    background-color: rgb(236, 26, 46);
+	font: 87 14pt &quot;Arial Black&quot; ;
+	border:None;
+}
+
+QPushButton:hover {
+	color:rgb(255, 255, 255);
+    background-color: rgb(236, 26, 46);
+	border-bottom: 2px solid white;
+}
+
+QPushButton:pressed {
+	color:rgb(0, 0, 0);
+    background-color: rgb(236, 26, 46); 
+	border-bottom: 2px solid black;
+}
+</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>15</y>
+       <width>150</width>
+       <height>53</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../resource/viettel_logo.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_monitor">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>20</y>
+       <width>190</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">System Monitor</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_task">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>20</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">Task</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_robot">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>20</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">Robot</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_alarm">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>20</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">Alarm</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_static">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>20</y>
+       <width>111</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">Static</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_operation">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>20</y>
+       <width>130</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+       <weight>10</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string notr="true">Operation</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_monitor_4">
+     <property name="geometry">
+      <rect>
+       <x>1670</x>
+       <y>25</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+     </property>
+     <property name="text">
+      <string>iRobot Control System</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stk_wid_menu">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>85</y>
+      <width>400</width>
+      <height>990</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: 10px;
+</string>
+    </property>
+    <widget class="QWidget" name="menu_monitor">
+     <widget class="QLabel" name="lb_monitor_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>General</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Mission State</string>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Storage to Pick Station</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Storage to Unload Station</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Sorting to Pack Station</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Pack Station to Buffer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Buffer to Outbound</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_31">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>80</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Success</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_32">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>80</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_33">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Fail</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_34">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>110</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_35">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_36">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>140</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_37">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>170</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Executing</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_38">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>170</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_39">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>200</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Pending</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_40">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>200</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_41">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>310</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Total</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_42">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>350</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_43">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>310</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Average</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_44">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>350</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>1000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_45">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>390</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>2000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_46">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>390</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_47">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>430</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>3333</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_48">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>430</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_49">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>470</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_50">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>470</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>4000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_51">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>510</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_52">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>510</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>5000</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu_task">
+     <widget class="QDial" name="dial_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>141</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Task Chart</string>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>80</y>
+        <width>141</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>141</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_6">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>250</y>
+        <width>141</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu_robot">
+     <widget class="QLabel" name="lb_monitor_53">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>360</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Error</string>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>251</width>
+        <height>241</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_54">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>300</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_55">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>360</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_56">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>330</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Charging</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_57">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>330</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Offline</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_58">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>300</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>80</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Robot</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_59">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Online</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_60">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>300</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Tasking</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_61">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>330</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_62">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>330</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_63">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>360</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Idle</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_monitor_64">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>360</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: lime;
+font: 87 10pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu_alarm">
+     <widget class="QLabel" name="lb_robot_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Alarm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu_static">
+     <widget class="QLabel" name="lb_robot_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Static</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu_operation">
+     <widget class="QLabel" name="lb_robot_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Operation</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stk_wid_main">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>85</y>
+      <width>1505</width>
+      <height>990</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: 10px;</string>
+    </property>
+    <widget class="QWidget" name="page_monitor"/>
+    <widget class="QWidget" name="page_robot">
+     <widget class="QLabel" name="lb_monitor_17">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font: 87 14pt &quot;Arial Black&quot; ;</string>
+      </property>
+      <property name="text">
+       <string>Page Robot</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
