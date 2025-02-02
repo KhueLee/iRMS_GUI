@@ -2,7 +2,7 @@ from PySide2.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QGraphicsE
 from PySide2.QtGui import QColor, QPen
 from PySide2.QtCore import Qt, QTimer
 from PySide2.QtGui import QPainter
-from websocket.WebSocketListener import *
+from websocketIO.WebSocketListener import *
 
 
 class LayerMap(QWidget):
